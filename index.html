@@ -12,7 +12,7 @@
   <div>
     <canvas id="myChart"></canvas>
   </div>
-  <div id="textBox">Click on the chart for more information.</div><br>
+  <div id="textBox"></div><br>
   <div id="lineBox">
     <!--<canvas id="lineChart"></canvas>-->
   </div>
@@ -39,6 +39,9 @@ var data = {
     labels: names,
     datasets: [{
       backgroundColor: colors,
+      hoverBackgroundColor: colors,
+      hoverBorderColor: colors,
+      hoverBorderWidth:8,
       data: [5713, 449, 2279, 572, 5875, 3335, 4919, 4371, 5049, 5618, 4614, 3807, 1913],
       hashid: ['a1','a2','a3','a4','a5','a6','a7','a8','a9','a10','a11','a12','a13']
     }]
